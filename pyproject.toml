@@ -4,9 +4,35 @@ build-backend = "hatchling.build"
 
 [project]
 name = "akademy_party"
-version = "7.0.0"
-description = "SAGE Education is a free and open-source project for educators, educational institutions, and governments."
-keywords = ["education", "SGA", "SGE", "SIE", "sage-edu", "school"]
+version = "7.0.1"
+description = "SAGE Education is a free and open-source education management platform for schools, universities, educators, and governments."
+keywords = [
+    "education",
+    "education-management",
+    "school-management",
+    "student-information-system",
+    "school-information-system",
+    "academic-management",
+    "learning-management",
+    "school",
+    "university",
+    "college",
+    "educators",
+    "students",
+    "government",
+    "open-source",
+    "erp",
+    "sis",
+    "sga",
+    "sge",
+    "sie",
+    "sage-edu",
+    "sage-education",
+    "school-erp",
+    "academic-erp",
+    "campus-management",
+    "education-platform"
+]
 authors = [
     { name = "Zacarias Juliano Capingala", email = "zacariasjuliano@gmail.com" }
 ]
@@ -18,14 +44,13 @@ requires-python = ">=3.8"
 license = { text = "GPL-3.0-or-later" }
 dependencies = [
     "psycopg2-binary>=2.9.11",
-    "pycountry>=24.6.1",
-    "trytond==7.0.0",
-    "trytond-country==7.0",
-    "trytond-party==7.0"
+    "pycountry>=24.6.1",    
+    "trytond-country==7.0.0",
+    "trytond-party==7.0.0"
 ]
 
 [project.urls]
-Homepage = "https://comunidadedosaber.ao"
+Homepage = "https://sage-edu.comunidadedosaber.ao"
 Documentation = "https://docs.comunidadedosaber.ao"
 Demo = "https://sage.comunidadedosaber.ao"
 Repository = "https://github.com/zacariasjuliano/akademy-party"
@@ -34,17 +59,19 @@ Changelog = "https://github.com/zacariasjuliano/akademy-party/blob/main/CHANGELO
 
 [tool.poetry]
 classifiers=[
-    'Development Status :: 1 - Production/Stable',
+    'Development Status :: 5 - Production/Stable',
     'Environment :: Plugins',
     'Framework :: Tryton',
     'Intended Audience :: Developers',
-    'Intended Audience :: Educational Institution',
+    "Intended Audience :: Education",
+    "Intended Audience :: Information Technology",
     "Intended Audience :: System Administrators",
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+) ",
     'Natural Language :: English',
     'Operating System :: OS Independent',
     'Programming Language :: Python :: 3',
     'Topic :: Education',
+    "Topic :: Office/Business",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 

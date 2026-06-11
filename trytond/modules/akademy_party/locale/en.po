@@ -11,47 +11,47 @@ msgid "Gestão Entidades"
 msgstr "Entity Management"
 
 msgctxt "model:ir.ui.menu,name:akademy_entities"
-msgid "Entidades"
-msgstr "Entity"
+msgid "Entities"
+msgstr "Entities"
 
 msgctxt "field:party.party,is_person:"
-msgid "Pessoa"
+msgid "Person"
 msgstr "Person"
 
 msgctxt "field:party.party,is_institution:"
-msgid "Instituição"
+msgid "Institution"
 msgstr "Institution"
 
 msgctxt "field:party.party,date_birth:"
-msgid "Nascimento"
+msgid "Date birth"
 msgstr "Date birth"
 
 msgctxt "field:party.party,gender:"
-msgid "Gênero"
+msgid "Gender"
 msgstr "Gender"
 
 msgctxt "selection:party.party,gender:"
-msgid "Masculino"
+msgid "Masculine"
 msgstr "Masculine"
 
 msgctxt "selection:party.party,gender:"
-msgid "Feminino"
+msgid "Female"
 msgstr "Female"
 
 msgctxt "selection:party.party,gender:"
-msgid "Não-Binário"
+msgid "Non-Binary"
 msgstr "Non-Binary"
 
 msgctxt "selection:party.party,gender:"
-msgid "Gênero Fluído"
+msgid "Gender Fluid"
 msgstr "Gender Fluid"
 
 msgctxt "selection:party.party,gender:"
-msgid "Agênero"
+msgid "Agender"
 msgstr "Agender"
 
 msgctxt "selection:party.party,gender:"
-msgid "Transgênero"
+msgid "Transgender"
 msgstr "Transgender"
 
 msgctxt "selection:party.party,gender:"
@@ -59,99 +59,93 @@ msgid "Bigenero"
 msgstr "Bigenero"
 
 msgctxt "selection:party.party,gender:"
-msgid "Gêneroqueer"
+msgid "Genderqueer"
 msgstr "Genderqueer"
 
 msgctxt "selection:party.party,gender:"
-msgid "Dois Espíritos"
+msgid "Two-Spirit"
 msgstr "Two-Spirit"
 
 msgctxt "selection:party.party,gender:"
-msgid "Pangênero"
+msgid "Pangender"
 msgstr "Pangender"
 
 msgctxt "field:party.party,marital_status:"
-msgid "Estado civil"
+msgid "Marital status"
 msgstr "Marital status"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "Solteiro(a)"
+msgid "Single"
 msgstr "Single"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "Casado(a)"
+msgid "Married"
 msgstr "Married"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "Divorciado(a)"
+msgid "Divorced"
 msgstr "Divorced"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "Víuvo(a)"
+msgid "Widow(er)"
 msgstr "Widow(er)"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "Separado(a)"
+msgid "Separated"
 msgstr "Separated"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "União Estável"
+msgid "Common-law Marriage"
 msgstr "Common-law Marriage"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "Relacionamento Aberto"
+msgid "Open Relationship"
 msgstr "Open Relationship"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "Relação Doméstica Registrada"
+msgid "Registered Domestic Relationship"
 msgstr "Registered Domestic Relationship"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "Casamento de Fato"
-msgstr "Common-law Marriage"
-
-msgctxt "selection:party.party,marital_status:"
-msgid "Casamento Civil"
+msgid "Civil Marriage"
 msgstr "Civil Marriage"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "Casamento Religioso"
+msgid "Religious Marriage"
 msgstr "Religious Marriage"
 
 msgctxt "field:party.party,bi_number:"
-msgid "B.I nº"
+msgid "ID nº"
 msgstr "ID nº"
 
 msgctxt "field:party.party,father:"
-msgid "Pai"
+msgid "Father"
 msgstr "Father"
 
 msgctxt "field:party.party,mother:"
-msgid "Mãe"
+msgid "Mother"
 msgstr "Mother"
 
 msgctxt "help:party.party,is_person:"
-msgid "A entidade é uma pessoa."
+msgid "The entity is a person."
 msgstr "The entity is a person."
 
 msgctxt "help:party.party,is_institution:"
-msgid "A entidade é uma instituição ou organização."
+msgid "The entity is an organization."
 msgstr "The entity is an organization."
 
 msgctxt "help:party.party,date_birth:"
-msgid "Data de nascimento."
+msgid "The date of birth."
 msgstr "The date of birth."
 
 msgctxt "help:party.party,bi_number:"
-msgid "Número do bilhete de intidade."
+msgid "The unique number identifier of a person."
 msgstr "The unique number identifier of a person."
 
 msgctxt "help:party.party,father:"
-msgid "Nome do pai."
+msgid "Father's name"
 msgstr "Father's name"
 
 msgctxt "help:party.party,mother:"
-msgid "Nome da mãe."
+msgid "Mother's name."
 msgstr "Mother's name."
-
-

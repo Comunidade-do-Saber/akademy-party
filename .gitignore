@@ -5,6 +5,3 @@ dist/
 build/
 eggs/
 *.egg-info/
-
-# Setup Tryton Module
-trytond/modules/akademy_party/setup.py

@@ -1,87 +1,74 @@
 # This file is part of SAGE Education.   The COPYRIGHT file at the top level of
 # this repository contains the full copyright notices and license terms.
-
 from trytond.model import fields, Unique
 from trytond.pool import PoolMeta
 from trytond.pyson import Eval, Not, Bool
 
-
 _GENDER = [
     (None, ''),
-    ('masculino', 'Masculino'), ('feminino', 'Feminino'),
-    ('nao_binário', 'Não-Binário'), ('genero_fluido', 'Gênero Fluído'),
-    ('agenero', 'Agênero'), ('transgenero', 'Transgênero'),
-    ('bigenero', 'Bigenero'), ('generoqueer', 'Gêneroqueer'),
-    ('two_spirit', 'Dois Espíritos'), ('pangenero', 'Pangênero')
+    ('masculine', 'Masculine'), ('female', 'Female'),
+    ('non_binary', 'Non-Binary'), ('gender_fluid', 'Gender Fluid'),
+    ('agender', 'Agender'), ('transgender', 'Transgender'),
+    ('bigenero', 'Bigenero'), ('genderqueer', 'Genderqueer'),
+    ('two_spirit', 'Two-Spirit'), ('pangender', 'Pangender')
 ]
 
 _MARITALSTATUS =  [
     (None, ''),
-    ('solteiro(a)', 'Solteiro(a)'), ('casado(a)', 'Casado(a)'),
-    ('divorciado(a)', 'Divorciado(a)'), ('viuvo(a)', 'Víuvo(a)'),
-    ('separado(a)', 'Separado(a)'), ('uniao_estavel', 'União Estável'),
-    ('relacionamento_aberto', 'Relacionamento Aberto'), ('relacao_domestica_registrada', 'Relação Doméstica Registrada'),
-    ('casamento_de_fato', 'Casamento de Fato'), ('casamento_civil', 'Casamento Civil'),
-    ('casamento_religioso', 'Casamento Religioso')
+    ('single', 'Single'), ('married', 'Married'),
+    ('divorced', 'Divorced'), ('widow(er)', 'Widow(er)'),
+    ('separated', 'Separated'), ('common_law_marriage', 'Common-law Marriage'),
+    ('open_relationship', 'Open Relationship'), ('registered_domestic_relationship', 'Registered Domestic Relationship'),
+    ('civil_marriage', 'Civil Marriage'), ('religious_marriage', 'Religious Marriage')
 ]
+
 
 class Party(metaclass=PoolMeta):
     'Party'
     __name__= 'party.party'    
 
     is_person = fields.Boolean(
-        "Pessoa", 
+        "Person", 
         states={
             'invisible': Bool(Eval('is_institution')), 
             'required': Not(Bool(Eval('is_institution')))
         }, depends=['is_institution'], 
-        help="A entidade é uma pessoa.")
+        help="The entity is a person.")
     is_institution = fields.Boolean(
-        "Instituição", 
+        "Institution", 
         states={
             'invisible':  Bool(Eval('is_person')), 
             'required': Not(Bool(Eval('is_person')))
         }, depends=['is_person'], 
-        help="A entidade é uma instituição ou organização.")
+        help="The entity is an organization.")
     date_birth = fields.Date(
-        'Nascimento', 
+        'Date birth', 
         states={
             'invisible': Not(Bool(Eval('is_person'))), 
             'required': Bool(Eval('is_person'))            
-        }, help="Data de nascimento.\nEx: dia-mês-ano")    
-    gender = fields.Selection(_GENDER, string=u'Gênero',         
+        }, help="The date of birth.")    
+    gender = fields.Selection(_GENDER, string=u'Gender',         
         states={
             'invisible': Not(Bool(Eval('is_person'))), 
             'required': Bool(Eval('is_person'))
         })
-    marital_status = fields.Selection(_MARITALSTATUS, string=u'Estado civil', 
+    marital_status = fields.Selection(_MARITALSTATUS, string=u'Marital status', 
         states={
             'invisible': Not(Bool(Eval('is_person'))), 
             'required': Bool(Eval('is_person'))
         })
     bi_number = fields.Char(
-        'B.I nº', size=15,
+        'ID nº', size=15,
         states={
             'invisible': Not(Bool(Eval('is_person')))
-        }, help="Número do bilhete de intidade.")
+        }, help="The unique number identifier of a person.")
     father = fields.Many2One(
-        'party.party', 'Pai',
+        'party.party', 'Father',
         states={
             'invisible': Not(Bool(Eval('is_person')))
-        }, ondelete="RESTRICT", help="Nome do pai.")
+        }, ondelete="RESTRICT", help="Father's name")
     mother = fields.Many2One(
-        'party.party', 'Mãe',
+        'party.party', 'Mother',
         states={
             'invisible': Not(Bool(Eval('is_person')))
-        }, ondelete="RESTRICT", help="Nome da mãe.")
-
-    '''
-    @classmethod
-    def __setup__(cls):
-        super(Party, cls).__setup__()
-        table = cls.__table__()
-        cls._sql_constraints += [
-            ('bi_uniq', Unique(table, table.bi_number), 'O número de B.I já existe ou esta vazio.')
-        ]
-    '''
-    
+        }, ondelete="RESTRICT", help="Mother's name.")    

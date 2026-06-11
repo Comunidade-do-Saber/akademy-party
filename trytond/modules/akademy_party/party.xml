@@ -4,11 +4,11 @@ this repository contains the full copyright notices and license terms. -->
 
 <tryton>
 	<data>
-        <menuitem name="Gestão Entidades" id="akademy_party" sequence="1"
+        <menuitem name="Entity Management" id="akademy_party" sequence="1"
             icon="tryton-party"/>
         		
         <!-- start akademy_party -->
-        <menuitem name="Entidades" parent="akademy_party" id="akademy_entities" 
+        <menuitem name="Entities" parent="akademy_party" id="akademy_entities" 
             icon="tryton-party" sequence="2" action="party.act_party_form"/>  
 
         <record model="ir.ui.view" id="party_view_form">
@@ -20,7 +20,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="model">party.party</field>
             <field name="inherit" ref="party.party_view_tree"/>
             <field name="name">party_tree</field>
-        </record>  
-        
+        </record>
 	</data>
 </tryton>
