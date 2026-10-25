@@ -2,150 +2,146 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "model:party.party,name:"
-msgid "Party"
-msgstr "Entity"
-
-msgctxt "model:ir.ui.menu,name:akademy_party"
-msgid "Gestão Entidades"
-msgstr "Entity Management"
-
-msgctxt "model:ir.ui.menu,name:akademy_entities"
-msgid "Entities"
-msgstr "Entities"
-
-msgctxt "field:party.party,is_person:"
-msgid "Person"
-msgstr "Person"
-
-msgctxt "field:party.party,is_institution:"
-msgid "Institution"
-msgstr "Institution"
+msgctxt "field:party.party,bi_number:"
+msgid "ID nº"
+msgstr "ID nº"
 
 msgctxt "field:party.party,date_birth:"
 msgid "Date birth"
 msgstr "Date birth"
 
+msgctxt "field:party.party,father:"
+msgid "Father"
+msgstr "Father"
+
 msgctxt "field:party.party,gender:"
 msgid "Gender"
 msgstr "Gender"
 
-msgctxt "selection:party.party,gender:"
-msgid "Masculine"
-msgstr "Masculine"
+msgctxt "field:party.party,is_institution:"
+msgid "Institution"
+msgstr "Institution"
 
-msgctxt "selection:party.party,gender:"
-msgid "Female"
-msgstr "Female"
+msgctxt "field:party.party,is_person:"
+msgid "Person"
+msgstr "Person"
 
-msgctxt "selection:party.party,gender:"
-msgid "Non-Binary"
-msgstr "Non-Binary"
+msgctxt "field:party.party,marital_status:"
+msgid "Marital status"
+msgstr "Marital status"
 
-msgctxt "selection:party.party,gender:"
-msgid "Gender Fluid"
-msgstr "Gender Fluid"
+msgctxt "field:party.party,mother:"
+msgid "Mother"
+msgstr "Mother"
+
+msgctxt "help:party.party,bi_number:"
+msgid "The unique number identifier of a person."
+msgstr "The unique number identifier of a person."
+
+msgctxt "help:party.party,date_birth:"
+msgid "The date of birth."
+msgstr "The date of birth."
+
+msgctxt "help:party.party,father:"
+msgid "Father's name"
+msgstr "Father's name"
+
+msgctxt "help:party.party,is_institution:"
+msgid "The entity is an organization."
+msgstr "The entity is an organization."
+
+msgctxt "help:party.party,is_person:"
+msgid "The entity is a person."
+msgstr "The entity is a person."
+
+msgctxt "help:party.party,mother:"
+msgid "Mother's name."
+msgstr "Mother's name."
+
+msgctxt "model:ir.ui.menu,name:akademy_entities"
+msgid "Entities"
+msgstr "Entities"
+
+msgctxt "model:ir.ui.menu,name:akademy_party"
+msgid "Entity Management"
+msgstr "Entity Management"
 
 msgctxt "selection:party.party,gender:"
 msgid "Agender"
 msgstr "Agender"
 
 msgctxt "selection:party.party,gender:"
-msgid "Transgender"
-msgstr "Transgender"
-
-msgctxt "selection:party.party,gender:"
 msgid "Bigenero"
 msgstr "Bigenero"
+
+msgctxt "selection:party.party,gender:"
+msgid "Female"
+msgstr "Female"
+
+msgctxt "selection:party.party,gender:"
+msgid "Gender Fluid"
+msgstr "Gender fluid"
 
 msgctxt "selection:party.party,gender:"
 msgid "Genderqueer"
 msgstr "Genderqueer"
 
 msgctxt "selection:party.party,gender:"
-msgid "Two-Spirit"
-msgstr "Two-Spirit"
+msgid "Masculine"
+msgstr "Masculine"
+
+msgctxt "selection:party.party,gender:"
+msgid "Non-Binary"
+msgstr "Non-Binary"
 
 msgctxt "selection:party.party,gender:"
 msgid "Pangender"
 msgstr "Pangender"
 
-msgctxt "field:party.party,marital_status:"
-msgid "Marital status"
-msgstr "Marital status"
+msgctxt "selection:party.party,gender:"
+msgid "Transgender"
+msgstr "Transgender"
+
+msgctxt "selection:party.party,gender:"
+msgid "Two-Spirit"
+msgstr "Two-Spirit"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "Single"
-msgstr "Single"
+msgid "Civil Marriage"
+msgstr "Civil marriage"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "Married"
-msgstr "Married"
+msgid "Common-law Marriage"
+msgstr "Common-law marriage"
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Divorced"
 msgstr "Divorced"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "Widow(er)"
-msgstr "Widow(er)"
+msgid "Married"
+msgstr "Married"
+
+msgctxt "selection:party.party,marital_status:"
+msgid "Open Relationship"
+msgstr "Open relationship"
+
+msgctxt "selection:party.party,marital_status:"
+msgid "Registered Domestic Relationship"
+msgstr "Registered domestic relationship"
+
+msgctxt "selection:party.party,marital_status:"
+msgid "Religious Marriage"
+msgstr "Religious marriage"
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Separated"
 msgstr "Separated"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "Common-law Marriage"
-msgstr "Common-law Marriage"
+msgid "Single"
+msgstr "Single"
 
 msgctxt "selection:party.party,marital_status:"
-msgid "Open Relationship"
-msgstr "Open Relationship"
-
-msgctxt "selection:party.party,marital_status:"
-msgid "Registered Domestic Relationship"
-msgstr "Registered Domestic Relationship"
-
-msgctxt "selection:party.party,marital_status:"
-msgid "Civil Marriage"
-msgstr "Civil Marriage"
-
-msgctxt "selection:party.party,marital_status:"
-msgid "Religious Marriage"
-msgstr "Religious Marriage"
-
-msgctxt "field:party.party,bi_number:"
-msgid "ID nº"
-msgstr "ID nº"
-
-msgctxt "field:party.party,father:"
-msgid "Father"
-msgstr "Father"
-
-msgctxt "field:party.party,mother:"
-msgid "Mother"
-msgstr "Mother"
-
-msgctxt "help:party.party,is_person:"
-msgid "The entity is a person."
-msgstr "The entity is a person."
-
-msgctxt "help:party.party,is_institution:"
-msgid "The entity is an organization."
-msgstr "The entity is an organization."
-
-msgctxt "help:party.party,date_birth:"
-msgid "The date of birth."
-msgstr "The date of birth."
-
-msgctxt "help:party.party,bi_number:"
-msgid "The unique number identifier of a person."
-msgstr "The unique number identifier of a person."
-
-msgctxt "help:party.party,father:"
-msgid "Father's name"
-msgstr "Father's name"
-
-msgctxt "help:party.party,mother:"
-msgid "Mother's name."
-msgstr "Mother's name."
+msgid "Widow(er)"
+msgstr "Widow(er)"

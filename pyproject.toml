@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "akademy_party"
-version = "7.0.1"
+version = "8.0.0"
 description = "SAGE Education is a free and open-source education management platform for schools, universities, educators, and governments."
 keywords = [
     "education",
@@ -45,17 +45,17 @@ license = { text = "GPL-3.0-or-later" }
 dependencies = [
     "psycopg2-binary>=2.9.11",
     "pycountry>=24.6.1",    
-    "trytond-country==7.0.0",
-    "trytond-party==7.0.0"
+    "trytond-country==8.0.0",
+    "trytond-party==8.0.0"
 ]
 
 [project.urls]
 Homepage = "https://sage-edu.comunidadedosaber.ao"
-Documentation = "https://docs.comunidadedosaber.ao"
-Demo = "https://sage.comunidadedosaber.ao"
-Repository = "https://github.com/zacariasjuliano/akademy-party"
-"Bug Tracker" = "https://github.com/zacariasjuliano/akademy-party/issues"
-Changelog = "https://github.com/zacariasjuliano/akademy-party/blob/main/CHANGELOG.md"
+Documentation = "https://docs.sage-edu.comunidadedosaber.ao"
+Demo = "https://app.sage-edu.comunidadedosaber.ao"
+Repository = "https://github.com/comunidade-do-saber/akademy-party"
+"Bug Tracker" = "https://github.com/comunidade-do-saber/akademy-party/issues"
+Changelog = "https://github.com/comunidade-do-saber/akademy-party/blob/main/CHANGELOG.md"
 
 [tool.poetry]
 classifiers=[

@@ -2,7 +2,7 @@
 <!-- This file is part of SAGE Education.   The COPYRIGHT file at the top level of
 this repository contains the full copyright notices and license terms. -->
 
-<!-- PERMISSION GROUP FOR ADMINISTRATOR USERS -->
+<!-- Group of Permissions for Administrator users -->
 <tryton>
     <data>
         <!-- Create the administrator user group. -->
@@ -18,7 +18,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="group_akademy_admin"/>
         </record>        
 
-        <!-- Access to the PARTY menu -->
         <record model="ir.ui.menu-res.group" 
             id="akademy_party-group_akademy_admin">
             <field name="menu" ref="akademy_party"/>
@@ -30,23 +29,20 @@ this repository contains the full copyright notices and license terms. -->
             <field name="group" ref="group_akademy_admin"/>
         </record>
 
-        <!-- Defining Rules for Accessing Models -->
-        <!-- Party Model -->
         <record model="ir.model.access" 
             id="access_akademy_entities-group_akademy_admin">
-            <field name="model" search="[('model', '=', 'party.party')]"/>
+            <field name="model">party.party</field>
             <field name="group" ref="group_akademy_admin"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
             <field name="perm_delete" eval="True"/>
         </record>
-        <!-- access rule group -->
+
         <record model="ir.rule.group" 
             id="rule_group_akademy_entities-group_akademy_admin">
-            <field name="name">Entidades</field>
-            <field name="model" 
-                search="[('model', '=', 'party.party')]"/>
+            <field name="name">Entities</field>
+            <field name="model">party.party</field>
             <field name="global_p" eval="False"/>
             <field name="default_p" eval="False"/>
             <field name="perm_read" eval="True"/>
